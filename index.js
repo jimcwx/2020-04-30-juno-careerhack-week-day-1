@@ -21,7 +21,7 @@ const dataService = new DataService();
 // List all the data.
 // GET /api/data
 app.get('/api/data', (req, res) => {
-  res.json(dataService.all());
+  res.json(dataService.all())
 });
 
 // Save a data object
