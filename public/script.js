@@ -1,8 +1,9 @@
+
 // Gets the data and outputs it to the `out` div
 function fetchAndPrintData() {
   fetch('/api/data')
     .then(data => data.json())
-    .then(json => document.getElementById('out').textContent = JSON.stringify(json) );
+    .then(json => document.getElementById('out').textContent = JSON.stringify(json));
 }
 
 // Submits the form and refreshes the data
@@ -19,7 +20,7 @@ function submitForm() {
     },
     body: JSON.stringify({ title, description })
   })
-  .then(() => fetchAndPrintData());
+    .then(() => fetchAndPrintData());
 
 }
 
