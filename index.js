@@ -36,7 +36,7 @@ app.post('/api/data', (req, res) => {
 
 
 // Start the application
-const listener = app.listen(process.env.PORT || 8080, () => {
+const listener = app.listen(process.env.PORT || 3389, () => {
   // get the port from the listener.
   const port = listener.address().port;
 
